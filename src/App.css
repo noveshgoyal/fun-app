@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Ubuntu&display=swap");
+
+body {
+  background-color: #154c79;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5% auto;
+  height: 75vh;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin-bottom: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  font-size: large;
+}
+
+input {
+  width: 60%;
+  margin-top: 9px;
+  margin-bottom: 6px;
+  height: 30%;
+  text-align: center;
+  padding: 3px;
+  font-size: large;
+  border-radius: 8px;
+  outline: none;
+  background-color: #bae6fd;
+  border: 3px solid #0284c7;
+}
+
+#lucky-num {
+  width: 25%;
+  font-size: medium;
+  margin-bottom: 2%;
+}
+
+#dob-container {
+  text-align: center;
+}
+
+#luckyNum-container {
+  text-align: center;
+}
+
+button {
+  width: 9%;
+  height: 5.5vh;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  border: 3px solid #0284c7;
+  background-color: #bae6fd;
+}
+
+#output {
+  text-align: center;
+  padding-top: 12px;
+  width: 30%;
+  height: 15vh;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-bottom-right-radius: 20px;
+  font-size: large;
+  font-family: "Merienda One", cursive;
 }
