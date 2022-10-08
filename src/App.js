@@ -10,11 +10,11 @@ function App() {
     setDob(event.target.value);
   }
 
-  function getLuckyNum(event) {
+  function getLuckyNum(event) {       
     setLuckyNum(event.target.value);
   }
 
-  function calculateSum(dob) {
+  function calculateSum(dob) {               // function to calculate the sum of the integers in date of birth
     let sum = 0;
     const dateOfBirth = dob.replaceAll("-", "");
     for (let num of dateOfBirth) {
@@ -23,9 +23,9 @@ function App() {
     return sum;
   }
 
-  function checkNumber(dob, luckyNumber) {
-    if (dob || luckyNumber === "") {
-      alert("Please Enter both the Numbers!");
+  function checkNumber(dob, luckyNumber) {              // function to check sif the dob is lucky or not
+    if (dob === "" || luckyNumber==="") {
+      setOutput("Please Enter both the Numbers!");
     } else {
       const sum = calculateSum(dob);
       if (sum % luckyNumber === 0) {
