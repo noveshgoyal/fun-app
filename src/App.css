@@ -64,6 +64,11 @@ button {
   background-color: #bae6fd;
 }
 
+button:hover{
+  background-color: #7cbde0;
+  transition: 0.2s;
+}
+
 #output {
   text-align: center;
   padding-top: 12px;
